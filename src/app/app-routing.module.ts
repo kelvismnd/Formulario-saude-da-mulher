@@ -1,3 +1,4 @@
+import { EditarPacienteComponent } from './componentes/editar-paciente/editar-paciente.component';
 import { ExcluirPacienteComponent } from './componentes/excluir-paciente/excluir-paciente.component';
 import { FormularioPacienteComponent } from './componentes/formulario-paciente/formulario-paciente.component';
 import { ListarCadastrosPacientesComponent } from './componentes/listar-cadastros-pacientes/listar-cadastros-pacientes.component';
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path:'paciente/excluirPaciente/:id',
     component:ExcluirPacienteComponent
+  },
+  {
+    path:'paciente/editarPaciente/:id',
+    component:EditarPacienteComponent
   }
 ];
 

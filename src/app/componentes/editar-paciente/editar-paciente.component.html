@@ -1,0 +1,51 @@
+
+<section>
+  <form  class="form_cadastro_paciente">
+    <label for="nome">NOME</label>
+    <input type="text" placeholder="Digite o nome" id="nome" name="nome" [(ngModel)]="paciente.nome">
+
+    <label for="CPF">CPF</label>
+    <input type="text" placeholder="Digite CPF" id="cpf" name="cpf" [(ngModel)]="paciente.cpf">
+
+    <label for="NomePai">Nome do Pai</label>
+    <input type="text" placeholder="Nome do Pai" id="nomePai" name="nomePai" >
+
+    <label for="NomeMae">Nome da Mae</label>
+    <input type="text" placeholder="Nome da Mae" id="nomeMae" name="nomeMae" >
+
+    <label for="estadoCivil">ESTADO CIVIL</label>
+    <input type="text" placeholdrer="estado civil" id="estadoCivil" name="estadoCivil" >
+
+    <label for="conjugue">CÔNJUGUE</label>
+    <input type="text" placeholder="Nome do Cônjugue" id="conjugue" name="conjugue" >
+
+    <label for="dataNascimento">DATA DE NASCIMENTO</label>
+    <input type="text" placeholder="Data de Nascimento" id="dataNascimento" name="dataNascimento" [(ngModel)]="paciente.dataNascimento">
+
+    <label for="naturalidade">NATURALIDADE</label>
+    <input type="text" placeholder="NATURALIDADE" id="naturalidade" name="naturalidade" [(ngModel)]="paciente.naturalidade">
+
+    <label for="religiao">RELIGIÃO</label>
+    <input type="text" placeholder="religiao" id="religiao" name="religiao" >
+
+    <label for="escolaridade">ESCOLARIDADE</label>
+    <input type="text" placeholder="ESCOLARIDADE"  id="escolaridade" name="escolaridade" >
+
+    <label for="profissão">PROFISSÃO</label>
+    <input type="text" placeholder="profissao"  id="profissao" name="profissao" >
+
+    <label for="telefone">TELEFONE</label>
+    <input type="text" placeholder="telefone"  id="telefone" name="telefone" >
+
+    <label for="endereço" class="campos_endereco">ENDEREÇO</label>
+    <br>
+    <input type="text" class="input_endereco" placeholder="Digite o cep" id="cep" name="cep" >
+    <input type="text" class="input_endereco" placeholder="Digite o estado" id="rua" name="rua" value="CEARA">
+    <input type="text" class="input_endereco" placeholder="Digite a cidade" id="cidade" name="cidade" value="PACATUBA">
+    <input type="text" class="input_endereco" placeholder="Digite o bairro" id="rua" name="rua" value="jereisati 3">
+    <input type="text" class="input_endereco" placeholder="Digite a rua" id="rua" name="rua" >
+    <input type="text" class="input_endereco" placeholder="Digite o numero" id="numero" name="numero" >
+    <button class="btn btn_gerar" (click)="editarPaciente()"> SALVAR </button>
+    <button class="btn btn_cancelar" [routerLink]="['/paciente/listarCadastros']"> CANCELAR </button>
+  </form>
+</section>

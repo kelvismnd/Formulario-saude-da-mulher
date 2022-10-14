@@ -27,8 +27,15 @@ export class PacienteService {
     return this.httpCliente.delete<Paciente>(url);
   }
 
+  editarPaciente(paciente:Paciente):Observable<Paciente>{
+    const url = `${this.API}/${paciente.id}`
+    return this.httpCliente.put<Paciente>(url,paciente);
+  }
+
   buscarPorId(id:number):Observable<Paciente>{
     const url = `${this.API}/${id}`;
     return this.httpCliente.get<Paciente>(url);
   }
+
+
 }

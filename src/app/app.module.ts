@@ -17,6 +17,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { ListarCadastrosPacientesComponent } from './componentes/listar-cadastros-pacientes/listar-cadastros-pacientes.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ExcluirPacienteComponent } from './componentes/excluir-paciente/excluir-paciente.component';
+import { EditarPacienteComponent } from './componentes/editar-paciente/editar-paciente.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +25,7 @@ import { ExcluirPacienteComponent } from './componentes/excluir-paciente/excluir
     FormularioPacienteComponent,
     ListarCadastrosPacientesComponent,
     ExcluirPacienteComponent,
+    EditarPacienteComponent,
    ],
   imports: [
     BrowserModule,
