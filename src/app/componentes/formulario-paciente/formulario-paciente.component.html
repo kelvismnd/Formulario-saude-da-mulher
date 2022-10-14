@@ -1,11 +1,11 @@
 
 <section>
-  <form action="" class="form_cadastro_paciente">
+  <form  class="form_cadastro_paciente">
     <label for="nome">NOME</label>
-    <input type="text" placeholder="Digite o nome" id="nome" name="nome" >
+    <input type="text" placeholder="Digite o nome" id="nome" name="nome" [(ngModel)]="paciente.nome">
 
     <label for="CPF">CPF</label>
-    <input type="text" placeholder="Digite CPF" id="cpf" name="cpf" >
+    <input type="text" placeholder="Digite CPF" id="cpf" name="cpf" [(ngModel)]="paciente.cpf">
 
     <label for="NomePai">Nome do Pai</label>
     <input type="text" placeholder="Nome do Pai" id="nomePai" name="nomePai" >
@@ -14,16 +14,16 @@
     <input type="text" placeholder="Nome da Mae" id="nomeMae" name="nomeMae" >
 
     <label for="estadoCivil">ESTADO CIVIL</label>
-    <input type="text" placeholder="estado civil" id="estadoCivil" name="estadoCivil" >
+    <input type="text" placeholdrer="estado civil" id="estadoCivil" name="estadoCivil" >
 
     <label for="conjugue">CÔNJUGUE</label>
     <input type="text" placeholder="Nome do Cônjugue" id="conjugue" name="conjugue" >
 
     <label for="dataNascimento">DATA DE NASCIMENTO</label>
-    <input type="text" placeholder="Data de Nascimento" id="dataNascimento" name="dataNascimento" >
+    <input type="text" placeholder="Data de Nascimento" id="dataNascimento" name="dataNascimento" [(ngModel)]="paciente.dataNascimento">
 
     <label for="naturalidade">NATURALIDADE</label>
-    <input type="text" placeholder="NATURALIDADE" id="naturalidade" name="naturalidade" >
+    <input type="text" placeholder="NATURALIDADE" id="naturalidade" name="naturalidade" [(ngModel)]="paciente.naturalidade">
 
     <label for="religiao">RELIGIÃO</label>
     <input type="text" placeholder="religiao" id="religiao" name="religiao" >
@@ -45,7 +45,8 @@
     <input type="text" class="input_endereco" placeholder="Digite o bairro" id="rua" name="rua" value="jereisati 3">
     <input type="text" class="input_endereco" placeholder="Digite a rua" id="rua" name="rua" >
     <input type="text" class="input_endereco" placeholder="Digite o numero" id="numero" name="numero" >
-
-
+    {{paciente.nome}}
+    <button class="btn btn_gerar" (click)="cadastrarPaciente()"> CADASTRAR </button>
+    <button class="btn btn_cancelar" [routerLink]="['/paciente/listarCadastros']"> CANCELAR </button>
   </form>
 </section>

@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -11,14 +12,18 @@ import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component'
 import {MatCardModule} from '@angular/material/card';
 import { FormularioPacienteComponent } from './componentes/formulario-paciente/formulario-paciente.component';
 import { MatNativeDateModule } from '@angular/material/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import { ListarCadastrosPacientesComponent } from './componentes/listar-cadastros-pacientes/listar-cadastros-pacientes.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ExcluirPacienteComponent } from './componentes/excluir-paciente/excluir-paciente.component';
 @NgModule({
   declarations: [
     AppComponent,
     CabecalhoComponent,
     FormularioPacienteComponent,
+    ListarCadastrosPacientesComponent,
+    ExcluirPacienteComponent,
    ],
   imports: [
     BrowserModule,
@@ -30,7 +35,10 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatCardModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    MatTabsModule
+    MatTabsModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

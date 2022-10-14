@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-cabecalho',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CabecalhoComponent implements OnInit {
 
-  constructor() { }
+  titulo:string | null  = 'Saúde da Mulher';
+  constructor(private routerParans:ActivatedRoute) { }
+
 
   ngOnInit(): void {
+
   }
 
 }

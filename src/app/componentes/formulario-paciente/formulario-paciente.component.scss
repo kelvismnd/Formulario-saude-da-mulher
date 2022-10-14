@@ -16,6 +16,7 @@ section{
   width: 30vw;
   padding: 20px;
   border-radius:6px;
+  margin-bottom: 40px;
 }
 
 .form_cadastro_paciente > input{
@@ -35,4 +36,35 @@ section{
 label.campos_endereco{
   display: flex;
   border-bottom: 3px solid #3f51b5;
+}
+
+.btn{
+  height: 40px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0;
+}
+
+.btn_gerar{
+  background-color: #3f51b5;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.btn_cancelar{
+  background-color: #f44336;
+  color:#fff;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+.btn_gerar:hover{
+  background-color: #7485e7;
+}
+
+.btn_cancelar:hover{
+  background-color: #f78078;
+
 }

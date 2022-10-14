@@ -1,0 +1,39 @@
+<section >
+  <section class="area2">
+    <button class="btn btn_formulario btn_imprimir" [routerLink]="['/criarCadastro']">Adicionar Paciente</button>
+    <button class="btn btn_formulario">Funcionalidade 02</button>
+    <button class="btn btn_formulario">Funcionalidade 03</button>
+    <button class="btn btn_formulario">Funcionalidade 04</button>
+
+  </section>
+  <table *ngIf="listaCadastros.length > 0 , else semPacientes">
+    <tr>
+      <th>Data Cadastro</th>
+      <th>Nome</th>
+      <th>CPF</th>
+      <th>Data Nascimento</th>
+      <th>Telefone</th>
+      <th>Ações</th>
+    </tr>
+    <tr *ngFor="let item of listaCadastros">
+      <td>{{item.dataCadastro}}</td>
+      <td>{{item.nome}}</td>
+      <td>{{item.cpf}}</td>
+      <td>{{item.dataNascimento}}</td>
+      <td>{{item.telefone}}</td>
+      <td class="td_acoes">
+        <button class="btn btn_acoes btn_vizualizar" >Vizualizar</button>
+        <button class="btn btn_acoes btn_imprimir">Imprimir</button>
+        <button class="btn btn_acoes btn_editar">Editar</button>
+        <button class="btn btn_acoes btn_excluir" routerLink="/paciente/excluirPaciente/{{item.id}}">Excluir</button>
+      </td>
+    </tr>
+  </table>
+  <ng-template #semPacientes>
+    <div class="sem_pacientes">
+      <p>Ainda não há pacientes cadastrados, se deseja<br>
+         cadastrar novos pacientes , <a [routerLink]="['/criarCadastro']">Clique Aqui !!</a>
+      </p>
+    </div>
+  </ng-template>
+</section>

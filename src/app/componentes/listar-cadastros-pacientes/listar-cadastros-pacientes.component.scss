@@ -1,0 +1,109 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+.btn{
+  height: 30px;
+  margin-right: 5px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.btn_vizualizar{
+  background-color: rgb(129, 209, 9);
+  color:#fff;
+  font-weight: 700;
+}
+
+.btn_vizualizar:hover{
+  background-color: chartreuse;
+}
+
+.btn_excluir{
+  background-color: crimson;
+  color:#fff;
+}
+.btn_excluir:hover{
+  background-color: rgb(240, 51, 89);
+}
+
+.btn_editar{
+  background-color: #e99425;
+  color: #fff;
+}
+.btn_editar:hover{
+  background-color:  #f1aa4c;
+}
+
+.btn_imprimir{
+  background-color: cornflowerblue;
+  color: #fff;
+}
+
+
+.btn_imprimir:hover{
+  background-color: rgb(142, 175, 236);
+}
+
+td.td_acoes{
+  padding: 10;
+  margin: 0;
+}
+
+.area2{
+  height: 10vh ;
+  display: flex;
+  align-items: center;
+}
+
+.btn_formulario{
+  margin-left: 3%;
+  border:1px solid rgb(204, 196, 196);
+  height: 40px;
+  width: 10%;
+  font-size: 1.0em;
+}
+
+.sem_pacientes{
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #ccc;
+  padding-top: 5%;
+}
+.sem_pacientes > p {
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+.sem_pacientes > p > a {
+  font-weight: 500;
+  color: blue;
+  text-decoration:underline;
+  cursor: pointer;
+}
+.sem_pacientes > p > a:hover{
+  color: rgb(112, 112, 230);
+  color: #fff;
+  background-color: rgb(147, 178, 235);
+
+}
+
+a:visited{
+  color: #444;
+}
