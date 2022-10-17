@@ -1,0 +1,180 @@
+
+<section>
+  <div  class="form_cadastro_paciente">
+
+    <h2>Vizualização</h2>
+
+    <section class="header">
+      <div class="logo">
+        <h2>Logo <br> Instituição</h2>
+      </div>
+
+      <div class="cabecalho">
+        <h2>Nome da Instituição</h2>
+        <p>Informações 01</p>
+        <p>Informações 02</p>
+        <p>Informações 03</p>
+      </div>
+    </section>
+    <hr width="100%">
+    <div class="quebra_linha">
+      <div class="collum">
+        <label for="nome">Nome</label>
+        <h3 class="campo">{{paciente.nome}}</h3>
+      </div>
+
+      <div class="collum">
+        <label for="CPF">CPF</label>
+        <h3 class="campo">{{paciente.cpf}}</h3>
+      </div>
+
+      <div class="collum">
+        <label for="dataNascimento">Data Nascimento</label>
+        <h3 class="campo">{{paciente.dataNascimento}}</h3>
+      </div>
+
+    </div>
+
+    <div class="quebra_linha">
+      <div class="collum">
+        <label for="NomePai">Nome do Pai</label>
+        <h3 class="campo">{{"Francisco Pai do Mendes "}}</h3>
+      </div>
+
+      <div class="collum">
+        <label for="NomeMae">Nome da Mãe</label>
+        <h3 class="campo">{{"Francisca Mae do Mendes"}}</h3>
+      </div>
+
+      <div class="collum">
+        <label for="naturalidade">Naturalidade</label>
+        <h3 class="campo">{{"Maracanau"}}</h3>
+      </div>
+
+    </div>
+
+    <div class="quebra_linha">
+      <div class="collum">
+        <label for="NomePai">Estado Civil</label>
+        <h3 class="campo">{{"Casada "}}</h3>
+      </div>
+
+      <div class="collum">
+        <label for="NomeMae">Conjugue</label>
+        <h3 class="campo">{{"Kelvis Mendes"}}</h3>
+      </div>
+
+      <div class="collum">
+        <label for="naturalidade">Religião</label>
+        <h3 class="campo">{{"Cristão"}}</h3>
+      </div>
+
+    </div>
+    <hr width="100%">
+    <div class="quebra_linha">
+      <div class="collum">
+        <label for="NomePai">Escolaridade</label>
+        <h3 class="campo">{{"Superior Completo "}}</h3>
+      </div>
+
+      <div class="collum">
+        <label for="NomeMae">Profissão</label>
+        <h3 class="campo">{{"Enfermeira"}}</h3>
+      </div>
+
+      <div class="collum">
+        <label for="naturalidade">Telefone</label>
+        <h3 class="campo">{{"(85) 997201819"}}</h3>
+      </div>
+
+    </div>
+    <hr width="100%">
+
+
+    <div class="quebra_linha">
+      <div class="collum">
+        <label for="NomePai">CEP</label>
+        <h3 class="campo">{{"61809-280"}}</h3>
+      </div>
+
+      <div class="collum">
+        <label for="NomeMae">Estado</label>
+        <h3 class="campo">{{"Ceara"}}</h3>
+      </div>
+
+      <div class="collum">
+        <label for="naturalidade">Cidade</label>
+        <h3 class="campo">{{"Pacatuba"}}</h3>
+      </div>
+
+      <div class="collum">
+        <label for="naturalidade">Bairro</label>
+        <h3 class="campo">{{"Munguba"}}</h3>
+      </div>
+
+
+    </div>
+
+    <div class="quebra_linha">
+      <div class="collum">
+        <label for="numeroCasa">Numero</label>
+        <h3 class="campo">{{654}}</h3>
+      </div>
+
+      <div class="collum">
+        <label for="naturalidade">Rua</label>
+        <h3 class="campo">{{"Rua Sem Nome"}}</h3>
+      </div>
+
+      <div class="collum">
+        <label for="numeroCasa">Ponto de Referencia</label>
+        <h3 class="campo">{{"Proximo a lagoa"}}</h3>
+      </div>
+
+    </div>
+
+    <hr width="100%">
+    <br>
+    <label for="" class="campos_endereco">Informações de Saúde</label>
+
+    <div>
+      <br>
+      <label>Alergias</label>
+
+      <div class="saude_row">
+        <label class="campo linha_left">Dipirona</label>
+        <label class="campo linha_left">Paracetamol</label>
+        <label class="campo linha_left">Frutos do Mar</label>
+      </div>
+    </div>
+
+    <div>
+      <br>
+      <label>Comorbidades</label>
+
+      <div class="saude_row">
+        <label class="campo linha_left">Pressão Alta</label>
+        <label class="campo linha_left">Diabetes</label>
+        <label class="campo linha_left">Insuficiência Renal Crônica</label>
+      </div>
+    </div>
+
+
+    <div>
+      <br>
+      <label>Item 03</label>
+
+      <div class="saude_row">
+        <label class="campo linha_left">SubItem 01</label>
+        <label class="campo linha_left">SubItem 02</label>
+        <label class="campo linha_left">SubItem 03</label>
+      </div>
+    </div>
+    <br><br>
+
+
+
+    <button class="btn btn_imprimir" > IMPRIMIR </button>
+    <button class="btn btn_cancelar" [routerLink]="['/paciente/listarCadastros']"> CANCELAR </button>
+  </div>
+</section>

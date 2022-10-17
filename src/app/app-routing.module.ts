@@ -1,3 +1,4 @@
+import { VizualizarPacienteComponent } from './componentes/vizualizar-paciente/vizualizar-paciente.component';
 import { EditarPacienteComponent } from './componentes/editar-paciente/editar-paciente.component';
 import { ExcluirPacienteComponent } from './componentes/excluir-paciente/excluir-paciente.component';
 import { FormularioPacienteComponent } from './componentes/formulario-paciente/formulario-paciente.component';
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path:'paciente/editarPaciente/:id',
     component:EditarPacienteComponent
+  },
+  {
+    path:'paciente/vizualizarPaciente/:id',
+    component:VizualizarPacienteComponent
   }
 ];
 

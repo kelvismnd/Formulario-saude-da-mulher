@@ -18,6 +18,7 @@ import { ListarCadastrosPacientesComponent } from './componentes/listar-cadastro
 import {HttpClientModule} from '@angular/common/http';
 import { ExcluirPacienteComponent } from './componentes/excluir-paciente/excluir-paciente.component';
 import { EditarPacienteComponent } from './componentes/editar-paciente/editar-paciente.component';
+import { VizualizarPacienteComponent } from './componentes/vizualizar-paciente/vizualizar-paciente.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { EditarPacienteComponent } from './componentes/editar-paciente/editar-pa
     ListarCadastrosPacientesComponent,
     ExcluirPacienteComponent,
     EditarPacienteComponent,
+    VizualizarPacienteComponent,
    ],
   imports: [
     BrowserModule,

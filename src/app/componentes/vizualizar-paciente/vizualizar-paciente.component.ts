@@ -1,15 +1,14 @@
-import { ActivatedRoute, Route, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PacienteService } from './../pacientes/paciente.service';
 import { Paciente } from './../../interface/paciente.interface';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-editar-paciente',
-  templateUrl: './editar-paciente.component.html',
-  styleUrls: ['./editar-paciente.component.scss']
+  selector: 'app-vizualizar-paciente',
+  templateUrl: './vizualizar-paciente.component.html',
+  styleUrls: ['./vizualizar-paciente.component.scss']
 })
-export class EditarPacienteComponent implements OnInit {
-
+export class VizualizarPacienteComponent implements OnInit {
   paciente:Paciente ={
     id:0,
     nome:'',
@@ -30,14 +29,6 @@ export class EditarPacienteComponent implements OnInit {
     });
   }
 
-  editarPaciente(){
-    this.pacienteService.editarPaciente(this.paciente).subscribe(()=>{
-      alert("Paciente editado com sucesso !!");
-      this.route.navigate(['/paciente/listarCadastros'])
-    })
-  }
 
-  imprimirPaciente(){
 
-  }
 }

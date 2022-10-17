@@ -22,7 +22,7 @@
       <td>{{item.dataNascimento}}</td>
       <td>{{item.telefone}}</td>
       <td class="td_acoes">
-        <button class="btn btn_acoes btn_vizualizar" >Vizualizar</button>
+        <button class="btn btn_acoes btn_vizualizar" routerLink="/paciente/vizualizarPaciente/{{item.id}}" >Vizualizar</button>
         <button class="btn btn_acoes btn_imprimir">Imprimir</button>
         <button class="btn btn_acoes btn_editar"  routerLink="/paciente/editarPaciente/{{item.id}}">Editar</button>
         <button class="btn btn_acoes btn_excluir" routerLink="/paciente/excluirPaciente/{{item.id}}">Excluir</button>

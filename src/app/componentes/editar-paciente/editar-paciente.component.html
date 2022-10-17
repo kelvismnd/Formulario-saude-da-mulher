@@ -46,6 +46,7 @@
     <input type="text" class="input_endereco" placeholder="Digite a rua" id="rua" name="rua" >
     <input type="text" class="input_endereco" placeholder="Digite o numero" id="numero" name="numero" >
     <button class="btn btn_gerar" (click)="editarPaciente()"> SALVAR </button>
+    <button class="btn btn_imprimir" (click)="imprimirPaciente()"> IMPRIMIR </button>
     <button class="btn btn_cancelar" [routerLink]="['/paciente/listarCadastros']"> CANCELAR </button>
   </form>
 </section>
